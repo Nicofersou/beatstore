@@ -22,3 +22,8 @@ Bajo esta premisa surge este proyecto de mercado online, los productores tendrá
 - `Compra de instrumentales`: Los usuarios que lo deseen podrán comprar diferentes licencias para la compra de instrumentales
 - `Venta de instrumentales`: Productores podrán vender sus obras con pleno control sobre ellas.
 - `Creación de una comunidad`: Se podrán consultar las noticias y novedades del mundo de la música.
+
+## 🎵: Fichero omitidos
+<p> Alguno ficheros como pueden ser las pistas de audio no se encuentran en este repositorio debido a su gran tamaño. La base de datos tampoco se encuentra subida y actualmente no está en funcionamiento continuo, por lo que si otra persona distinta al desarrollador quiere desplegar esta web necesita contactar con el propietario.
+   Para más información enviar un correo a nicolasfersou@gmail.com </p>
+

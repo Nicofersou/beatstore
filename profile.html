@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="js/users-management.js"></script>
+  </head>
+
+  <body class="login-page fade-in">
+    <div class="login-wrapper">
+      <h1 class="login-title" id="name"></h1>
+
+      <div id="miModal" class="modal">
+        <div class="modal-contenido">
+          <a href="profile.html">X</a>
+          <h2 class="login-text">Eliminar cuenta</h2>
+          <p class="login-text">
+            Introduce la contraseña para eliminar la cuenta
+          </p>
+          <input
+            class="login-input"
+            type="password"
+            name="new_pass"
+            id="confirm_pass"
+          />
+          <p id="errorDelete"></p>
+          <button class="delete" id="delete2" name="delete">
+            ELIMINAR CUENTA
+          </button>
+        </div>
+      </div>
+      <div class="login-form">
+        <div>
+          <h2 class="login-title">Modificar nombre de usuario</h2>
+          <p class="login-text">Nuevo nombre de usuario</p>
+          <input
+            class="login-input"
+            type="text"
+            name="new_username"
+            value=""
+            id="new_name"
+          />
+          <p id="error"></p>
+          <button class="confirm-login" id="new_register" name="register">
+            Modificar
+          </button>
+        </div>
+
+        <div>
+          <h2 class="login-title">Modificar contraseña</h2>
+          <p class="login-text">Introduce la contraseña actual</p>
+          <input
+            class="login-input"
+            type="password"
+            name="new_pass"
+            value=""
+            id="old_pass"
+          />
+          <p class="login-text">Introduce la nueva contraseña</p>
+          <input
+            class="login-input"
+            type="password"
+            name="new_pass"
+            value=""
+            id="new_pass"
+          />
+          <p id="error2"></p>
+          <button
+            class="confirm-login"
+            id="new_register_pass"
+            name="register_pass"
+          >
+            Modificar
+          </button>
+        </div>
+
+        <div>
+          <button class="delete" id="delete" name="delete">
+            ELIMINAR CUENTA
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

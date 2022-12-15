@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es-ES" prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>Upload beat</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <head>
+    <script src="js/uploadbeat-Management.js"></script>
+  </head>
+
+  <body class="fade-in">
+    <div class="uploadContainer">
+      <h1 class="login-title">Datos del beat</h1>
+
+      <div class="uploadBeat" name="login">
+        <form action="/beatstore/php/uploadbeat-Management.php" method="post" enctype="multipart/form-data">
+          <div class="up-first-column">
+            <input
+              class="uploadBeatInput"
+              placeholder="Title"
+              minlength="2"
+              maxlength="15"
+              type="text"
+              name="title"
+              id="title"
+              value=""
+            />
+            <input
+              class="uploadBeatInput"
+              placeholder="Scale"
+              type="text"
+              minlength="2"
+              maxlength="10"
+              name="scale"
+              id="scale"
+              value=""
+            />
+            <input
+              class="uploadBeatInput"
+              placeholder="Base price"
+              type="text"
+              name="price"
+              maxlength="6"
+              id="price"
+              value=""
+            />
+            <input
+              class="uploadBeatInput"
+              placeholder="BPM"
+              type="number"
+              name="bpm"
+              maxlength="6"
+              id="bpm"
+              value=""
+            />
+          </div>
+          <div class="up-second-column">
+            <label for="photo" class="custom-file-upload"> Image </label>
+            <input
+              accept="image/png, image/jpg, image/jpeg"
+              class="login-input"
+              type="file"
+              name="photo"
+              id="photo"
+              value=""
+            />
+
+            <label for="mp3" class="custom-file-upload"> .mp3 </label>
+            <input
+              accept=".mp3"
+              class="login-input"
+              type="file"
+              name="mp3"
+              id="mp3"
+              value=""
+            />
+
+            <label for="wav" class="custom-file-upload"> .wav </label>
+            <input
+              accept=".wav"
+              class="login-input"
+              type="file"
+              name="wav"
+              id="wav"
+              value=""
+            />
+
+            <label for="zip" class="custom-file-upload"> .zip </label>
+            <input
+              accept=".zip"
+              class="login-input"
+              type="file"
+              name="zip"
+              id="zip"
+              value=""
+            />
+          </div>
+          <button class="confirm-upload" name="upload" id="upload" type="submit">
+            Enviar solicitud
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

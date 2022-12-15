@@ -1,0 +1,100 @@
+@import "variables";
+header {
+  background-color: #101010;
+  display: flex;
+  grid-template-rows: 100%;
+}
+
+.header-button {
+  font-family: "Futura";
+}
+
+@keyframes slide {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+footer {
+  background-color: #101010;
+  display: -ms-grid;
+  display: flex;
+  height: 5em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  visibility: hidden;
+  padding-bottom: 2em;
+}
+
+footer.slide {
+  animation: 0.2s ease-in 0s 1 slide;
+}
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo-wrapper {
+  margin-left: 1%;
+  width: 80%;
+}
+
+#menu {
+  width: auto;
+
+  ul {
+    @include displayFlexRow;
+    list-style: none;
+
+    li {
+      font-size: 150%;
+      text-align: center;
+      padding-right: 1em;
+      padding-left: 1em;
+    }
+    a {
+      white-space: nowrap;
+      color: white;
+      text-decoration: none;
+    }
+    li::after {
+      display: block;
+      content: "";
+      border-bottom: solid 3px #ffb606;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    li:hover:after {
+      transform: scaleX(1);
+    }
+    a:hover {
+      color: #ffb606;
+      transition-property: all;
+      transition-duration: 0.5s;
+      transition-timing-function: linear;
+    }
+  }
+
+
+
+ .nav li ul{
+  display: none;
+  font-size: 60%;
+  float: left;
+ }
+
+ .nav li:hover > ul{
+   display: block;
+ }
+  
+}

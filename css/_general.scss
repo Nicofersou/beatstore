@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Zlatous";
+  src: url("../fonts/TrapBeats-aeO5.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/Futura.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  #main_title h1 {
+    font-family: "Zlatous";
+    font-size: 300%;
+  }
+  margin: 0;
+  background-color: #000000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 620px) {
+    #main_title h1 {
+      font-size: 250%;
+    }
+  }
+}
+
+body.fade-out {
+  animation: 1s ease-out 0s 1 fade-out;
+}
+
+body.fade-in {
+  animation: 1s ease-in 0s 1 fade-in;
+}
